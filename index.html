@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe | Website </title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header >
+        <div class="container">
+        <a href="# " class="home">Delicious Recipe.</a>
+        <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        </div>
+      </header>
+      <section id="home">
+        <div class="hero">
+        <h1>Welcome to our Recipe Collection!</h1>
+        <p>Discover the Joy of Cooking - Tasty Recipes for Every Occasion!</p>
+       <div class="search-box">
+<input type="text" id="searchbox"placeholder="Search for Recipe">
+      <button type="submit" id="search">Search</button>
+       </div> 
+        </div>
+       </section>
+      <section id="categories">
+  <h1 >Explore Categories</h1>
+  <div class="categories-container">
+    <div class="category-card">
+      <img src="images/breakfast.jpeg" alt="Breakfast" class="category-image">
+      <h3 class="category-name">Breakfast</h3>
+      <p class="category-description">Start your day with our delicious breakfast recipes!</p>
+      <button class="view-category-btn">View More</button>
+    </div>
+    <div class="category-card">
+      <img src="images/lunch.jpg" alt="Lunch" class="category-image">
+      <h3 class="category-name">Vegetarian</h3>
+      <p class="category-description">Fuel your day with our collection of hearty and delicious recipes!</p>
+      <button class="view-category-btn">View More</button>
+    </div>
+    <div class="category-card">
+      <img src="images/dinner.jpg" alt="Dinner" class="category-image">
+      <h3 class="category-name">Chicken</h3>
+      <p class="category-description">End your day on a delicious note with our satisfying chicken recipes! </p>
+      <button class="view-category-btn">View More</button>
+    </div>
+    <div class="category-card">
+      <img src="images/seafood.jpg" alt="Seafood" class="category-image">
+      <h3 class="category-name">Sea Food</h3>
+      <p class="category-description">Satisfy your cravings with our tasty and easy-to-make sea food recipes!</p>
+      <button class="view-category-btn">View More</button>
+    </div>
+ 
+    <div class="category-card">
+      <img src="images/desert.jpg" alt="Deserts" class="category-image">
+      <h3 class="category-name">Deserts</h3>
+      <p class="category-description">Satisfy your cravings with our tasty and easy-to-make deserts recipes!</p>
+      <button class="view-category-btn">View More</button>
+    </div>
+  </div>
+      </section>
+      <section id="recipes">
+        <h1 id="recipe-heading">Popular Recipes</h1>
+        <div class="recipe-container">
+        </div>
+      </section>
+      <section>
+        <div class="recipe-popup" id="recipePopup">
+          <button type="button" class="close-btn">
+           <i class='bx bx-message-square-x'></i>
+          </button>
+        <div class="recipe-details">
+          
+ </div>
+   </div>
+      </section>
+      <section>
+      <div class="category-popup" id="categoryPopup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <img id="popupImage" src="" alt="Category Image" class="popup-image">
+          <h2 id="popupTitle">Category Name</h2>
+          <p id="popupDescription">Category description goes here...</p>
+          <div class="quick-facts">
+            <p><strong>Cooking Time:</strong> <span id="popupCookingTime"></span></p>
+            <p><strong>Difficulty:</strong> <span id="popupDifficulty"></span></p>
+          </div>
+          <h3 class="popular">Popular Recipes</h3>
+          <ul id="popupRecipes"></ul>
+       
+        </div>
+      </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container">
+<h1 >Contact Us</h1>
+  <p>Have questions, suggestions, or feedback? We'd love to hear from you!</p>
+  
+  <form id="contact-form">
+    <div class="input-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+  </div>
+  
+  <textarea name="" id="" cols="25" rows="8" placeholder="Your Message"></textarea>
+  <input type="submit" value="Send Message" class="btn">
+  </form>
+
+  <div class="contact-info">
+    <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+    <p>Follow us: 
+      <a href="#" target="_blank">Instagram</a> | 
+      <a href="#" target="_blank">Facebook</a>
+    </p>
+  </div>
+        </div>
+</section>
+<footer class="footer">
+  <div class="footer-text">
+      <p>Copyright &copy; 2025 by Mahnoor Meher| All Rights Reserved</p>
+  </div>
+  <div class="footer-iconTop">
+    <button id="scrollToTop">⬆</button>
+
+  </div>
+ </footer>
+
+     
+      
+      <script src="script.js"></script> 
+</body>
+</html>
